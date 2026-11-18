@@ -1,7 +1,6 @@
 # TDDE56 – Prognos av värmeeffektbehov för byggnader
 
 Grupprojekt i kursen **TDDE56 Foundations of AI and ML** vid Linköpings universitet (HT2 2026).
-Projektet är framtaget tillsammans med forskare inom Energisystem (ENSYS).
 
 ## Vad projektet handlar om
 
@@ -50,18 +49,33 @@ Det svåra i projektet: att **utvärdera tidsserier ärligt** (ingen information
 
 ## Kom igång
 
-**Google Colab (rekommenderas av kursen):** ladda upp notebooken, lägg `buildings_data.csv` i Google Drive och montera Drive i notebooken.
+Vi arbetar via **GitHub**. Alla klonar repot, kör lokalt och jobbar på en **egen branch** som slås ihop med `main` via Pull Request. Se [CONTRIBUTING.md](CONTRIBUTING.md) för steg-för-steg.
 
-**Lokalt:**
+**1. Klona repot och skapa din branch:**
+
+```bash
+git clone https://github.com/JoesephA/TDDE56-Project.git
+cd TDDE56-Project
+git switch -c ditt-namn/vad-du-gör
+```
+
+**2. Sätt upp Python-miljön:**
 
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
+```
+
+**3. Lägg datan på plats:** hämta `buildings_data.csv` från Lisam och lägg den i en mapp `data/` i repot (den ignoreras av Git och pushas inte).
+
+**4. Starta Jupyter:**
+
+```bash
 jupyter lab
 ```
 
-Ta bort Colab-specifika rader (`from google.colab import drive`, `drive.mount(...)`) och peka `pd.read_csv` mot din lokala kopia av datan.
+Startnotebooken innehåller Colab-specifika rader (`from google.colab import drive`, `drive.mount(...)`). Ta bort dem och läs datan med `pd.read_csv("data/buildings_data.csv")`.
 
 ## Viktiga datum
 

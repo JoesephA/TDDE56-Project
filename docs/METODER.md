@@ -108,7 +108,6 @@ Enligt Cerqueira et al. (2020):
 - [ ] Vilken **huvudhorisont** kör vi? (Förslag: 12 veckor, plus en kurva 4–52.)
 - [ ] Hur stort **testset**? (Förslag: sista 2–5 åren.)
 - [ ] Vilka **modeller** är "måste" och vilka är "om tid finns"?
-- [ ] **Colab eller lokalt** – vilken miljö kör vi gemensamt?
 - [ ] **Arbetsfördelning** – vem tar vad?
 
 ## 8. Förslag på arbetsfördelning
