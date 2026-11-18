@@ -32,6 +32,7 @@ Det svåra i projektet: att **utvärdera tidsserier ärligt** (ingen information
 ## Läs vidare
 
 - 📘 **[docs/METODER.md](docs/METODER.md)** – hur vi tänker angripa problemet: begrepp, modeller, prognosstrategier, utvärdering och öppna frågor.
+- 🔁 **[arbetsgang/](arbetsgang/README.md)** – rutinen varje gång du jobbar: pulla senaste, byta branch, pusha.
 - 💻 **[SETUP.md](SETUP.md)** – utvecklingsmiljön: VS Code, Python, Jupyter och rutinen för varje arbetspass.
 - 🛠️ **[CONTRIBUTING.md](CONTRIBUTING.md)** – hur man använder Git/GitHub i gruppen (clone, pull, commit, push, branches, konflikter).
 
@@ -40,6 +41,7 @@ Det svåra i projektet: att **utvärdera tidsserier ärligt** (ingen information
 ```
 ├── heating_forecast.ipynb   # Startnotebook från kursen (laddar data, plottar, skapar supervised-format)
 ├── requirements.txt         # Python-beroenden för lokal körning
+├── arbetsgang/              # Rutinen varje gång man jobbar (pull, branch, push)
 ├── SETUP.md                 # Guide för utvecklingsmiljön (VS Code)
 ├── CONTRIBUTING.md          # Git-guide för gruppen
 ├── .vscode/                 # Gemensamma VS Code-inställningar och rekommenderade tillägg
