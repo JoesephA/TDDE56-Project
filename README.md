@@ -32,6 +32,7 @@ Det svåra i projektet: att **utvärdera tidsserier ärligt** (ingen information
 ## Läs vidare
 
 - 📘 **[docs/METODER.md](docs/METODER.md)** – hur vi tänker angripa problemet: begrepp, modeller, prognosstrategier, utvärdering och öppna frågor.
+- 💻 **[SETUP.md](SETUP.md)** – utvecklingsmiljön: VS Code, Python, Jupyter och rutinen för varje arbetspass.
 - 🛠️ **[CONTRIBUTING.md](CONTRIBUTING.md)** – hur man använder Git/GitHub i gruppen (clone, pull, commit, push, branches, konflikter).
 
 ## Repo-struktur
@@ -39,7 +40,9 @@ Det svåra i projektet: att **utvärdera tidsserier ärligt** (ingen information
 ```
 ├── heating_forecast.ipynb   # Startnotebook från kursen (laddar data, plottar, skapar supervised-format)
 ├── requirements.txt         # Python-beroenden för lokal körning
+├── SETUP.md                 # Guide för utvecklingsmiljön (VS Code)
 ├── CONTRIBUTING.md          # Git-guide för gruppen
+├── .vscode/                 # Gemensamma VS Code-inställningar och rekommenderade tillägg
 └── docs/
     ├── METODER.md                         # Vårt metodupplägg (diskussionsunderlag)
     ├── heating-demand-forecasting.pdf     # Projektbeskrivning
@@ -69,11 +72,7 @@ pip install -r requirements.txt
 
 **3. Lägg datan på plats:** hämta `buildings_data.csv` från Lisam och lägg den i en mapp `data/` i repot (den ignoreras av Git och pushas inte).
 
-**4. Starta Jupyter:**
-
-```bash
-jupyter lab
-```
+**4. Öppna projektet i VS Code** och kör notebooken där. Hur man ställer in VS Code, och vad man gör varje gång man sätter sig och jobbar, står i **[SETUP.md](SETUP.md)**.
 
 Startnotebooken innehåller Colab-specifika rader (`from google.colab import drive`, `drive.mount(...)`). Ta bort dem och läs datan med `pd.read_csv("data/buildings_data.csv")`.
 
@@ -81,7 +80,6 @@ Startnotebooken innehåller Colab-specifika rader (`from google.colab import dri
 
 | Vad | När |
 |---|---|
-| Gruppkontrakt & projektplan (gruppinlämning, Lisam) | fre 13 nov 2026, 23:30 |
 | Presentation av resultat (10 min + 5 min frågor) | tors 17 dec 2026, 13:15–17:00 |
 | Individuell rapport (~1 500 ord, engelska, Lisam) | lör 16 jan 2027, 23:30 |
 
