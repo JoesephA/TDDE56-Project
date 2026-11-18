@@ -30,12 +30,19 @@ den måste vara **minst 4 veckor**.
 
 Det svåra i projektet: att **utvärdera tidsserier ärligt** (ingen informationsläcka från framtiden).
 
+## Läs vidare
+
+- 📘 **[docs/METODER.md](docs/METODER.md)** – hur vi tänker angripa problemet: begrepp, modeller, prognosstrategier, utvärdering och öppna frågor.
+- 🛠️ **[CONTRIBUTING.md](CONTRIBUTING.md)** – hur man använder Git/GitHub i gruppen (clone, pull, commit, push, branches, konflikter).
+
 ## Repo-struktur
 
 ```
 ├── heating_forecast.ipynb   # Startnotebook från kursen (laddar data, plottar, skapar supervised-format)
 ├── requirements.txt         # Python-beroenden för lokal körning
+├── CONTRIBUTING.md          # Git-guide för gruppen
 └── docs/
+    ├── METODER.md                         # Vårt metodupplägg (diskussionsunderlag)
     ├── heating-demand-forecasting.pdf     # Projektbeskrivning
     ├── upg2_group_project_guidelines.pdf  # Riktlinjer för grupprojektet
     └── upg2_project_intro.pdf             # Introduktionsbilder för alla projekt
