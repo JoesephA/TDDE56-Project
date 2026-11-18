@@ -33,16 +33,16 @@ Nu har du allt som de andra har slagit ihop.
 
 ## 3. Gå till den branch du ska jobba på
 
-**Ny uppgift** → skapa en ny branch (`ditt-namn/vad-du-gör`):
+**Ny uppgift** → skapa en ny branch (`namn/vad-du-gör`, t.ex. `anna/sarima`):
 
 ```bash
-git switch -c joseph/vad-du-gör
+git switch -c namn/vad-du-gör
 ```
 
 **Fortsätter på en befintlig branch** → byt till den och ta in det nya från `main`:
 
 ```bash
-git switch joseph/vad-du-gör
+git switch namn/vad-du-gör
 ```
 
 ```bash
@@ -80,7 +80,7 @@ git push
 Första gången du pushar en ny branch:
 
 ```bash
-git push -u origin joseph/vad-du-gör
+git push -u origin namn/vad-du-gör
 ```
 
 ## 6. När uppgiften är klar – Pull Request
@@ -96,7 +96,7 @@ När den är granskad: **Merge pull request**. Gå sedan tillbaka till steg 2.
 cd ~/aiproject/TDDE56-Project
 git switch main
 git pull
-git switch joseph/min-branch
+git switch namn/min-branch
 git merge main
 # ... jobba ...
 git add .

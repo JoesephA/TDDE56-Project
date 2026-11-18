@@ -112,7 +112,7 @@ För att inte skriva över varandras arbete jobbar var och en på en egen branch
 **Skapa och byt till en ny branch:**
 
 ```bash
-git switch -c joseph/eda
+git switch -c namn/eda
 ```
 
 Namnförslag: `ditt-namn/vad-du-gör`, t.ex. `anna/sarima`.
@@ -120,7 +120,7 @@ Namnförslag: `ditt-namn/vad-du-gör`, t.ex. `anna/sarima`.
 **Pusha branchen första gången:**
 
 ```bash
-git push -u origin joseph/eda
+git push -u origin namn/eda
 ```
 
 Därefter räcker `git push`.
