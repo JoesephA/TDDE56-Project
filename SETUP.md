@@ -3,11 +3,11 @@
 Vi kör allt i **Visual Studio Code (VS Code)**. Där har man notebooks, Python, terminal och Git i
 samma fönster, och alla i gruppen får samma upplägg.
 
-Del 1 gör du **en gång**. Del 2 är rutinen för **varje gång** du sätter dig och jobbar.
+Den här guiden gör du **en gång**. Rutinen för **varje gång** du sätter dig och jobbar finns i [arbetsgang/](arbetsgang/README.md).
 
 ---
 
-## Del 1 – Engångsinstallation
+## Engångsinstallation
 
 ### 1. Installera programmen
 
@@ -100,77 +100,11 @@ Mappen ignoreras av Git, så datan laddas aldrig upp till GitHub.
 Öppna `heating_forecast.ipynb`. Klicka på **Select Kernel** uppe till höger → **Python Environments** → välj **.venv**.
 Kör första cellen med `Shift + Enter`. Får du inga fel är du klar.
 
-> Startnotebooken är skriven för Google Colab. Ta bort raderna `from google.colab import drive` och
-> `drive.mount(...)`, och läs datan med `pd.read_csv("data/buildings_data.csv")`.
-
 ---
 
-## Del 2 – Rutin varje gång du jobbar
+## Varje gång du jobbar
 
-```
- ┌─────────────┐   ┌────────────┐   ┌──────────────┐   ┌───────┐   ┌────────────────┐
- │ 1. Öppna    │ → │ 2. Hämta   │ → │ 3. Rätt      │ → │ 4.    │ → │ 5. Spara &     │
- │ VS Code     │   │ senaste    │   │ branch       │   │ Jobba │   │ pusha          │
- └─────────────┘   └────────────┘   └──────────────┘   └───────┘   └────────────────┘
-```
-
-### 1. Öppna projektmappen i VS Code
-*File → Open Recent → TDDE56-Project*.
-
-### 2. Hämta det senaste från GitHub
-
-```bash
-git switch main
-```
-
-```bash
-git pull
-```
-
-### 3. Gå till din branch och ta in det senaste från main
-
-Ny uppgift? Skapa en ny branch:
-
-```bash
-git switch -c ditt-namn/vad-du-gör
-```
-
-Fortsätter på en befintlig? Byt till den och ta in det nya från main:
-
-```bash
-git switch ditt-namn/vad-du-gör
-```
-
-```bash
-git merge main
-```
-
-Du ser alltid vilken branch du är på **längst ner till vänster** i VS Code. Klicka där för att byta.
-
-### 4. Jobba
-- Kontrollera att notebooken använder kerneln **.venv** (uppe till höger).
-- Terminalen i VS Code aktiverar `.venv` automatiskt – syns som `(.venv)`.
-- Har någon lagt till nya paket i `requirements.txt`? Kör `pip install -r requirements.txt` igen.
-
-### 5. Spara och pusha
-
-Via terminalen:
-
-```bash
-git add .
-```
-
-```bash
-git commit -m "Kort beskrivning av vad du gjort"
-```
-
-```bash
-git push
-```
-
-Eller via VS Code: klicka på **Source Control**-ikonen (grenikonen i vänstermenyn) → skriv ett meddelande → **Commit** → **Sync Changes**.
-
-När din del är klar: skapa en **Pull Request** på GitHub så att den kan slås ihop med `main`. Se [CONTRIBUTING.md](CONTRIBUTING.md).
+Se **[arbetsgang/](arbetsgang/README.md)**: hämta det senaste, byt till rätt branch, jobba, pusha.
 
 ---
 
