@@ -48,6 +48,8 @@ Det svåra i projektet: att **utvärdera tidsserier ärligt** (ingen information
 └── docs/
     ├── METODER.md                         # Vårt metodupplägg (diskussionsunderlag)
     ├── heating-demand-forecasting.pdf     # Projektbeskrivning
+    ├── cerqueira2020_evaluating-time-series-models.pdf  # Utvärdering av tidsseriemodeller (uppg. 2)
+    ├── taieb2012_multistep-forecasting-strategies.pdf   # Prognosstrategier: rekursiv, direkt, MIMO (uppg. 3)
     ├── upg2_group_project_guidelines.pdf  # Riktlinjer för grupprojektet
     └── upg2_project_intro.pdf             # Introduktionsbilder för alla projekt
 ```
@@ -69,8 +71,8 @@ Vi arbetar via **GitHub**: alla jobbar på en egen branch som slås ihop med `ma
 
 ## Referenser
 
-- V. Cerqueira, L. Torgo, I. Mozetič. *Evaluating time series forecasting models: An empirical study on performance estimation methods.* Machine Learning, 109:1997–2028, 2020.
-- S. Ben Taieb, G. Bontempi, A. F. Atiya, A. Sorjamaa. *A review and comparison of strategies for multi-step ahead time series forecasting based on the NN5 forecasting competition.* Expert Systems with Applications, 39(8):7067–7083, 2012.
+- V. Cerqueira, L. Torgo, I. Mozetič. *Evaluating time series forecasting models: An empirical study on performance estimation methods.* Machine Learning, 109:1997–2028, 2020. [PDF](docs/cerqueira2020_evaluating-time-series-models.pdf)
+- S. Ben Taieb, G. Bontempi, A. F. Atiya, A. Sorjamaa. *A review and comparison of strategies for multi-step ahead time series forecasting based on the NN5 forecasting competition.* Expert Systems with Applications, 39(8):7067–7083, 2012. [PDF](docs/taieb2012_multistep-forecasting-strategies.pdf)
 - R. J. Hyndman, G. Athanasopoulos. *Forecasting: Principles and Practice* (3rd ed.). https://otexts.com/fpp3/
 - [skforecast](https://skforecast.org/) – introduktion till tidsserieprognoser i Python.
 - F. Lazzeri. *Machine Learning for Time Series Forecasting with Python* (finns via LiU-biblioteket).
