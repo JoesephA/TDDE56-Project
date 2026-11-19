@@ -33,7 +33,7 @@ Det svåra i projektet: att **utvärdera tidsserier ärligt** (ingen information
 
 - 📘 **[docs/METODER.md](docs/METODER.md)** – hur vi tänker angripa problemet: begrepp, modeller, prognosstrategier, utvärdering och öppna frågor.
 - 🔁 **[arbetsgang/](arbetsgang/README.md)** – rutinen varje gång du jobbar: pulla senaste, byta branch, pusha.
-- 💻 **[SETUP.md](SETUP.md)** – utvecklingsmiljön: VS Code, Python, Jupyter och rutinen för varje arbetspass.
+- 💻 **[SETUP.md](SETUP.md)** – utvecklingsmiljön: engångsinstallation av VS Code, Python, Jupyter och datan.
 - 🛠️ **[CONTRIBUTING.md](CONTRIBUTING.md)** – hur man använder Git/GitHub i gruppen (clone, pull, commit, push, branches, konflikter).
 
 ## Repo-struktur
@@ -54,29 +54,11 @@ Det svåra i projektet: att **utvärdera tidsserier ärligt** (ingen information
 
 ## Kom igång
 
-Vi arbetar via **GitHub**. Alla klonar repot, kör lokalt och jobbar på en **egen branch** som slås ihop med `main` via Pull Request. Se [CONTRIBUTING.md](CONTRIBUTING.md) för steg-för-steg.
+Vi arbetar via **GitHub**: alla jobbar på en egen branch som slås ihop med `main` via Pull Request.
 
-**1. Klona repot och skapa din branch:**
-
-```bash
-git clone https://github.com/JoesephA/TDDE56-Project.git
-cd TDDE56-Project
-git switch -c ditt-namn/vad-du-gör
-```
-
-**2. Sätt upp Python-miljön:**
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-```
-
-**3. Lägg datan på plats:** hämta `buildings_data.csv` från Lisam och lägg den i en mapp `data/` i repot (den ignoreras av Git och pushas inte).
-
-**4. Öppna projektet i VS Code** och kör notebooken där. Hur man ställer in VS Code, och vad man gör varje gång man sätter sig och jobbar, står i **[SETUP.md](SETUP.md)**.
-
-Startnotebooken innehåller Colab-specifika rader (`from google.colab import drive`, `drive.mount(...)`). Ta bort dem och läs datan med `pd.read_csv("data/buildings_data.csv")`.
+1. **Första gången:** följ [SETUP.md](SETUP.md) (installera, klona, Python-miljö, data, VS Code).
+2. **Varje gång du jobbar:** följ [arbetsgang/](arbetsgang/README.md) (pulla, byt branch, pusha).
+3. **Fastnar du i Git:** läs [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Viktiga datum
 
